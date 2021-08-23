@@ -4,20 +4,8 @@ $color-gold:#a57d38;
 $color-white:#ffffff;  
 $footer-color:#737373; 
  
-.line-h{  
-  margin: 20px 0px;
-    display: flex; 
-    align-items: center;
-  .line{  
-    background-color: $color-gold;
-    height: 3px; 
-    width: 100px;
-  } 
-  h5{ 
-    font-size: 40px; 
-    font-weight: bold;
-  }
-
+.line-right{  
+    justify-content: flex-end;
 }
 
 
