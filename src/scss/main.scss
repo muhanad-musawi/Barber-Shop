@@ -1,2 +1,15 @@
-// This is where you can import other stylesheets or write your scss code
+// This is where you can import other stylesheets or write your scss code 
+@use "reset"; 
+@use "variables";
+@use "nav-footer" ;  
+@use "general" ; 
+@use "general-2" ;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+
+
+
