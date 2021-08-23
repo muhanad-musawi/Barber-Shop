@@ -1,0 +1,122 @@
+.line-h {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.line-h .line {
+  background-color: #a57d38;
+  height: 3px;
+  width: 100px;
+}
+.line-h h5 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text-3 {
+  text-align: center;
+  padding: 0px 30px;
+  border: none;
+  font-size: 18px;
+  color: #242d34;
+}
+.text-3 h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #a57d38;
+}
+.text-3 .span {
+  font-weight: bold;
+}
+
+.leistungen-2 {
+  color: #ffffff;
+  background-color: #242d34;
+  padding: 30px 0px;
+  border-bottom: 2px solid #737373;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+}
+.leistungen-2 .leist {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leistungen-2 .leist-foto img {
+  width: 100px;
+}
+.leistungen-2 .leist-text {
+  font-size: 25px;
+  font-weight: bold;
+}
+.leistungen-2 .leist-text .leist-preis {
+  color: #a57d38;
+  margin-left: 10px;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242d34;
+  padding: 30px 0px;
+  color: #ffffff;
+}
+.package h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #a57d38;
+  margin-bottom: 20px;
+}
+.package .pak-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.package .pack-name {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.package .pack-price {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #a57d38;
+}
+.package .klein {
+  font-size: 20px;
+}
+.package .tabl {
+  width: 60%;
+  margin-left: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.package table {
+  width: 100%;
+}
+.package td {
+  width: 50%;
+  padding: 5px;
+}
+.package table, .package th, .package td {
+  border: 3px solid #a57d38;
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 600px) {
+  .package {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=general-2.css.map */

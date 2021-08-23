@@ -1,0 +1,175 @@
+.pic1 {
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #242d34), url("../images/jason-leung-2seUdPQNy_I-unsplash (2).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  visibility: hidden;
+  display: none;
+}
+
+.pic-text {
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+button#absenden {
+  background: #a57d38;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+button#absenden:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom right, #a57d38, #242d34);
+}
+
+.radios {
+  height: 50px;
+  width: 50px;
+  border: 3px solid #a57d38;
+  border-radius: 60%;
+  display: flex;
+  margin-left: 20px;
+}
+
+.play {
+  display: flex;
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #a57d38;
+  margin: 10px;
+  margin-left: 18px;
+}
+
+.text-2 {
+  color: #242d34;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  border: 4px solid #a57d38;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.play-2 {
+  display: block;
+}
+
+.end-1 {
+  padding: 20px 0px;
+}
+
+.radios-2 {
+  margin-top: 10px;
+}
+
+.about {
+  margin-top: 30px;
+  padding: 0px 30px;
+  text-align: center;
+  color: #242d34;
+}
+.about h2 {
+  color: #a57d38;
+}
+.about .span {
+  font-weight: bold;
+}
+.about .more {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.about .more a {
+  border-left: 2px solid #a57d38;
+  border-right: 2px solid #a57d38;
+  padding: 20px 40px;
+  color: #242d34;
+  text-decoration: none;
+}
+.about .more a:hover {
+  color: #a57d38;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid #a57d38;
+  border-bottom: 2px solid #a57d38;
+}
+
+.sec-1 {
+  padding: 30px 0px;
+  background-color: #242d34;
+  border-bottom: 1px solid #737373;
+}
+.sec-1 h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.leistungen {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+}
+.leistungen .icon {
+  margin: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leistungen p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .caro-s {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+  .caro-s .pic1 {
+    visibility: unset;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .caro-s .end {
+    margin-bottom: 30px;
+  }
+  .caro-s .caro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .text-2 {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */
