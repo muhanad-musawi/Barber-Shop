@@ -1,0 +1,139 @@
+.shop {
+  background-color: #242d34;
+  width: 100%;
+}
+.shop .shop-content {
+  width: 100%;
+  padding: 20px;
+}
+.shop .shop-content article .about {
+  color: #ffffff;
+}
+.shop .shop-content article .about .more a {
+  color: #ffffff;
+}
+.shop .shop-content .card-larg {
+  background-color: #ffffff;
+  border: 1px solid #737373;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.shop .shop-content .card-larg .produkt-content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.shop .shop-content .card-larg .produkt-content-1 p {
+  color: #737373;
+  font-size: 20px;
+}
+.shop .shop-content .card-larg .produkt-content-1 h5 {
+  color: #242d34;
+  font-size: 25px;
+  font-weight: bold;
+}
+.shop .shop-content .card-larg .produkt-content-1 .produkt-price {
+  color: #a57d38;
+  font-size: 25px;
+  font-weight: bold;
+}
+.shop .shop-content .card-larg .produkt-content-1 .buttons {
+  display: flex;
+}
+.shop .shop-content .card-larg .produkt-content-1 .buttons span button#absenden {
+  border-radius: 0;
+  background-color: #737373;
+  padding: 0.5rem 0.2rem;
+}
+.shop .shop-content .card-larg .produkt-content-1 .buttons span button#absenden a img {
+  width: 25px;
+}
+.shop .shop-content .card-larg .produkt-content-1 .buttons button#absenden {
+  border-radius: 0;
+}
+.shop .shop-content .card-larg .produkt-content-1 .buttons button#absenden a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.shop .shop-content .card-larg .produkt-img {
+  padding: 0;
+  margin: 0;
+}
+
+.shop-1 {
+  background-color: #242d34;
+  width: 100%;
+}
+.shop-1 .shop-content-1 {
+  width: 100%;
+  padding: 20px;
+}
+.shop-1 .shop-content-1 .card-larg-1 {
+  background-color: #ffffff;
+  border: 1px solid #737373;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 p {
+  color: #737373;
+  font-size: 20px;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 h5 {
+  color: #242d34;
+  font-size: 25px;
+  font-weight: bold;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .produkt-price {
+  color: #a57d38;
+  font-size: 25px;
+  font-weight: bold;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons {
+  display: flex;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons span button#absenden {
+  border-radius: 0;
+  background-color: #737373;
+  padding: 0.5rem 0.2rem;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons span button#absenden a img {
+  width: 25px;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons button#absenden {
+  border-radius: 0;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons button#absenden a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.shop-1 .shop-content-1 .card-larg-1 .produkt-img-1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 640px) {
+  .shop .shop-content .card-larg {
+    flex-direction: row;
+  }
+  .shop-1 .shop-content-1 {
+    width: 50%;
+  }
+  .shop-1 .shop-content-1 .card-larg-1 .produkt-img-1 img {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=general-3.css.map */

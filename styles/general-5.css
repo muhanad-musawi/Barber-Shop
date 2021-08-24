@@ -54,7 +54,7 @@
 }
 
 form {
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   font-weight: bold;
   margin: 20px 20px;
@@ -64,11 +64,11 @@ form {
 }
 form input {
   width: 100%;
-  height: 30px;
   color: #242d34;
   background-color: #ffffff;
   border: #737373 1px solid;
-  padding: 15px;
+  padding: 0.2em;
+  margin: 20px 0;
 }
 form textarea {
   width: 100%;
@@ -81,10 +81,12 @@ form select#personen {
 }
 form select {
   width: 100%;
-  height: 30px;
+  padding: 10px;
   color: #a57d38;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0.3em;
 }
 form input#absenden {
   margin-top: 20px;
@@ -118,7 +120,35 @@ form input:focus:valid {
   font-weight: bold;
 }
 
+.form-2-2 {
+  width: 50%;
+  padding: 20px;
+}
+.form-2-2 #kontakt-2 {
+  display: flex;
+  flex-direction: column;
+}
+.form-2-2 #kontakt-2 h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.form-2-2 #kontakt-2 .border-0 {
+  border-radius: 0px;
+}
+.form-2-2 #kontakt-2 .border-0 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
+  .margin-1 {
+    margin-left: 15px;
+  }
+
+  .zero {
+    margin: 20px 0px;
+  }
+
   .contact {
     flex-direction: row;
     align-items: stretch;
