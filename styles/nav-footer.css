@@ -5,7 +5,7 @@
 }
 
 .gardient-1, .gardient-2, .gardient-3 {
-  height: 30px;
+  height: 40px;
   width: 100vw;
   background: #fffeef;
   background: linear-gradient(90deg, #fffeef 3%, #242d34 3%, #242d34 4%, #fffeef 4%, #fffeef 5%, #242d34 5%, #242d34 9%, #fffeef 9%, #fffeef 10%, #242d34 10%, #242d34 11%, #fffeef 11%, #fffeef 20%, #242d34 20%, #242d34 21%, #fffeef 21%, #fffeef 22%, #242d34 22%, #242d34 26%, #fffeef 26%, #fffeef 27%, #242d34 27%, #242d34 28%, #fffeef 28%, #fffeef 37%, #242d34 37%, #242d34 38%, #fffeef 38%, #fffeef 39%, #242d34 39%, #242d34 43%, #fffeef 43%, #fffeef 44%, #242d34 44%, #242d34 45%, #fffeef 45%, #fffeef 54%, #242d34 54%, #242d34 55%, #fffeef 55%, #fffeef 56%, #242d34 56%, #242d34 60%, #fffeef 60%, #fffeef 61%, #242d34 61%, #242d34 62%, #fffeef 62%, #fffeef 71%, #242d34 71%, #242d34 72%, #fffeef 72%, #fffeef 73%, #242d34 73%, #242d34 77%, #fffeef 77%, #fffeef 78%, #242d34 78%, #242d34 79%, #fffeef 79%, #fffeef 88%, #242d34 88%, #242d34 89%, #fffeef 89%, #fffeef 90%, #242d34 90%, #242d34 94%, #fffeef 94%, #fffeef 95%, #242d34 95%, #242d34 96%, #fffeef 96%);

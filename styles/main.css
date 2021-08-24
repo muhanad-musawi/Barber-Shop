@@ -12,7 +12,7 @@
 }
 
 .gardient-1, .gardient-2, .gardient-3 {
-  height: 30px;
+  height: 40px;
   width: 100vw;
   background: #fffeef;
   background: linear-gradient(90deg, #fffeef 3%, #242d34 3%, #242d34 4%, #fffeef 4%, #fffeef 5%, #242d34 5%, #242d34 9%, #fffeef 9%, #fffeef 10%, #242d34 10%, #242d34 11%, #fffeef 11%, #fffeef 20%, #242d34 20%, #242d34 21%, #fffeef 21%, #fffeef 22%, #242d34 22%, #242d34 26%, #fffeef 26%, #fffeef 27%, #242d34 27%, #242d34 28%, #fffeef 28%, #fffeef 37%, #242d34 37%, #242d34 38%, #fffeef 38%, #fffeef 39%, #242d34 39%, #242d34 43%, #fffeef 43%, #fffeef 44%, #242d34 44%, #242d34 45%, #fffeef 45%, #fffeef 54%, #242d34 54%, #242d34 55%, #fffeef 55%, #fffeef 56%, #242d34 56%, #242d34 60%, #fffeef 60%, #fffeef 61%, #242d34 61%, #242d34 62%, #fffeef 62%, #fffeef 71%, #242d34 71%, #242d34 72%, #fffeef 72%, #fffeef 73%, #242d34 73%, #242d34 77%, #fffeef 77%, #fffeef 78%, #242d34 78%, #242d34 79%, #fffeef 79%, #fffeef 88%, #242d34 88%, #242d34 89%, #fffeef 89%, #fffeef 90%, #242d34 90%, #242d34 94%, #fffeef 94%, #fffeef 95%, #242d34 95%, #242d34 96%, #fffeef 96%);
@@ -508,19 +508,8 @@ button#absenden:hover {
     display: flex;
   }
 }
-.line-h {
-  margin: 20px 0px;
-  display: flex;
-  align-items: center;
-}
-.line-h .line {
-  background-color: #a57d38;
-  height: 3px;
-  width: 100px;
-}
-.line-h h5, .line-h .h5 {
-  font-size: 40px;
-  font-weight: bold;
+.line-right {
+  justify-content: flex-end;
 }
 
 .text-3 {
@@ -625,6 +614,360 @@ button#absenden:hover {
 
 @media screen and (min-width: 600px) {
   .package {
+    flex-direction: row;
+  }
+}
+.line-h {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.line-h .line {
+  background-color: #a57d38;
+  height: 3px;
+  width: 100px;
+}
+.line-h h5, .line-h .h5 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+  box-shadow: 0px 2px 3px #222;
+  top: 50px;
+}
+
+.profile-card:hover .profile-img img {
+  transform: scale(1.2);
+}
+
+.profile-card .profile-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s;
+}
+
+.profile-card .profile-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 10%;
+  border: 3px solid #a57d38;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: scale(1, 1);
+  transition: all 0.5s linear;
+}
+
+.profile-card .profile-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 10%;
+  border: 3px solid #a57d38;
+  border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all 0.5s linear;
+}
+
+.profile-card:hover .profile-content:before {
+  top: 20px;
+  left: 0px;
+}
+
+.profile-card:hover .profile-content:after {
+  bottom: 20px;
+  right: 0px;
+}
+
+.profile-card .profile-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50% 4%;
+  text-align: center;
+}
+
+.profile-card .profile-content:hover {
+  background-color: #00000080;
+}
+
+.profile-card .profile-content .title {
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: translateY(-100px);
+  transition: all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+
+.profile-card:hover .title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profile-card:hover .title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  border-bottom: 2px solid #222;
+}
+
+.profile-card .profile-content .title > span {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.profile-card .profile-content .social-link {
+  margin: 20px 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+
+.profile-card:hover .social-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.profile-card .profile-content .social-link li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 4px;
+}
+
+.profile-card .profile-content .social-link li a {
+  color: #333;
+  width: 30px;
+  height: 25px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.gold {
+  color: #a57d38;
+}
+
+.profile-content button#absenden {
+  border-radius: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .profile-card .profile-content .title {
+    margin-top: -30px;
+  }
+
+  .profile-content button#absenden {
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    font-size: 10px;
+  }
+}
+.h44 h4, .h44 .h4 {
+  text-align: center;
+  color: #a57d38;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.container-1 {
+  margin-bottom: 10px;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+}
+.container-1 .box {
+  position: relative;
+  background: #ccc;
+}
+.container-1 .box.a {
+  grid-row: span 2;
+}
+.container-1 .box.b,
+.container-1 .box.f,
+.container-1 .box.h,
+.container-1 .box.j {
+  grid-column: span 2;
+}
+.container-1 .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .container-1 {
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px;
+  }
+}
+@media (max-width: 768px) {
+  .container-1 {
+    grid-template: "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px;
+  }
+}
+.cont-h h2, .cont-h .h2 {
+  text-align: center;
+  color: #a57d38;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contact {
+  /*background-color:white ;*/
+  color: #353a3e;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #a57d38;
+  background-color: #242d34;
+}
+.contact .photo-left {
+  background-image: url(../images/contact-2.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.contact .photo-left div {
+  color: #a57d38;
+  width: 100%;
+  padding: 0px 20px;
+}
+.contact .form-1 {
+  display: flex;
+  flex-direction: column;
+}
+.contact .form-2 {
+  display: flex;
+  flex-direction: column;
+}
+.contact .form-3 {
+  display: flex;
+  flex-direction: column;
+}
+.contact .form-4 {
+  display: flex;
+  flex-direction: column;
+}
+.contact .form-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 20px;
+  padding: 20px;
+  border: 1px solid #a57d38;
+  background-color: #ffffff;
+}
+form input {
+  width: 100%;
+  height: 30px;
+  color: #242d34;
+  background-color: #ffffff;
+  border: #737373 1px solid;
+  padding: 15px;
+}
+form textarea {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  color: #242d34;
+}
+form select#personen {
+  background-color: #ffffff;
+}
+form select {
+  width: 100%;
+  height: 30px;
+  color: #a57d38;
+  font-size: 20px;
+  font-weight: bold;
+}
+form input#absenden {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background: #a57d38;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 0px;
+  font-weight: 800;
+  font-size: 30px;
+}
+form input#absenden:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom right, #a57d38, #242d34);
+}
+form input:hover:required {
+  background-color: #a57d38;
+}
+form input:focus:invalid {
+  background: #ffffff;
+  color: #242d34;
+}
+form input:focus:valid {
+  background-color: #242d34;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .contact form {
+    width: 50%;
+  }
+  .contact .photo-left {
+    width: 50%;
+    height: auto;
+  }
+  .contact .form-1 {
+    flex-direction: row;
+  }
+  .contact .form-3 {
+    flex-direction: row;
+  }
+  .contact .form-4 {
     flex-direction: row;
   }
 }
