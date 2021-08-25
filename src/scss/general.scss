@@ -169,7 +169,8 @@ button#absenden {
 @media only screen and (min-width: 768px) {
   .caro-s {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); 
+    grid-template-rows: auto;
 
     .pic1 {
       visibility: unset;

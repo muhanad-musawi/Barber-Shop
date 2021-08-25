@@ -4,9 +4,13 @@ $color-gold:#a57d38;
 $color-white:#ffffff;  
 $footer-color:#737373; 
  
-.line-right{  
+.line-right{   
+  
     justify-content: flex-end;
 }
+.h44{ 
+  margin-top: 100px;
+} 
 
 
 .text-3 {  
@@ -60,26 +64,31 @@ $footer-color:#737373;
 } 
 
 //carousal-div A
-.package{  
+.package{   
+  width: 100%;
   display: flex;   
   flex-direction: column;  
   justify-content: center; 
   align-items: center;
    background-color: $color-dark; 
-  padding: 30px 0px; 
+  padding: 20px 10px; 
   
   color: $color-white;  
 
-  h3{  
+  h3{   
+    
     font-size: 30px ; 
     font-weight: bold;
     color:$color-gold ; 
     margin-bottom: 20px;
   }  
 
-.pak-1{ 
+.pak-1{   
+  padding: 0 20px;
+  width: 100%;
   display: flex; 
-  flex-direction: column; 
+  flex-direction: row;  
+  justify-content: space-between;
   align-items: center;
 }  
 
@@ -102,8 +111,8 @@ $footer-color:#737373;
 } 
 
 .tabl{  
-  width: 60%;
-  margin-left: 20px; 
+  width: 80%;
+  
   text-align: center; 
   color: $color-white; 
   font-size: 20px; 
@@ -132,7 +141,18 @@ table, th, td {
 @media screen and (min-width:600px){
   
   .package{ 
-    flex-direction: row;
+    flex-direction: row;  
+    justify-content: space-between;
+     
+    .pak-1{ 
+      flex-direction: column; 
+      padding: 0; 
+      width: 60%;
+    } 
+    .tabl{ 
+      width: 100%; 
+      padding-right: 30px;
+    }
   }
 }
 //carousal-div A
