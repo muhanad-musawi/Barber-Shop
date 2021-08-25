@@ -121,12 +121,16 @@ form input:focus:valid {
 }
 
 .form-2-2 {
-  width: 50%;
+  width: 100%;
   padding: 20px;
 }
 .form-2-2 #kontakt-2 {
   display: flex;
   flex-direction: column;
+}
+.form-2-2 #kontakt-2 #absenden {
+  width: 100%;
+  padding: 10px 0;
 }
 .form-2-2 #kontakt-2 h2 {
   color: #ffffff;
@@ -168,6 +172,10 @@ form input:focus:valid {
   }
   .contact .form-4 {
     flex-direction: row;
+  }
+
+  .form-2-2 {
+    width: 50%;
   }
 }
 

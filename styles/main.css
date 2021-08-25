@@ -482,6 +482,7 @@ button#absenden:hover {
   .caro-s {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: auto;
   }
   .caro-s .pic1 {
     visibility: unset;
@@ -510,6 +511,10 @@ button#absenden:hover {
 }
 .line-right {
   justify-content: flex-end;
+}
+
+.h44 {
+  margin-top: 100px;
 }
 
 .text-3 {
@@ -558,12 +563,13 @@ button#absenden:hover {
 }
 
 .package {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #242d34;
-  padding: 30px 0px;
+  padding: 20px 10px;
   color: #ffffff;
 }
 .package h3, .package .h3 {
@@ -573,8 +579,11 @@ button#absenden:hover {
   margin-bottom: 20px;
 }
 .package .pak-1 {
+  padding: 0 20px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 .package .pack-name {
@@ -593,8 +602,7 @@ button#absenden:hover {
   font-size: 20px;
 }
 .package .tabl {
-  width: 60%;
-  margin-left: 20px;
+  width: 80%;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -615,10 +623,20 @@ button#absenden:hover {
 @media screen and (min-width: 600px) {
   .package {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .package .pak-1 {
+    flex-direction: column;
+    padding: 0;
+    width: 60%;
+  }
+  .package .tabl {
+    width: 100%;
+    padding-right: 30px;
   }
 }
 .line-h {
-  margin: 20px 0px;
+  margin: 50px 0px;
   display: flex;
   align-items: center;
 }
@@ -952,12 +970,16 @@ form input:focus:valid {
 }
 
 .form-2-2 {
-  width: 50%;
+  width: 100%;
   padding: 20px;
 }
 .form-2-2 #kontakt-2 {
   display: flex;
   flex-direction: column;
+}
+.form-2-2 #kontakt-2 #absenden {
+  width: 100%;
+  padding: 10px 0;
 }
 .form-2-2 #kontakt-2 h2, .form-2-2 #kontakt-2 .h2 {
   color: #ffffff;
@@ -1000,71 +1022,92 @@ form input:focus:valid {
   .contact .form-4 {
     flex-direction: row;
   }
+
+  .form-2-2 {
+    width: 50%;
+  }
 }
-.shop {
+.prozent {
+  width: 100%;
+}
+.prozent .shop-grid {
   background-color: #242d34;
   width: 100%;
 }
-.shop .shop-content {
+.prozent .shop-grid .shop-content {
   width: 100%;
   padding: 20px;
+  display: flex;
+  align-items: center;
 }
-.shop .shop-content article .about {
+.prozent .shop-grid .shop-content .grid-01 .about {
   color: #ffffff;
 }
-.shop .shop-content article .about .more a {
+.prozent .shop-grid .shop-content .grid-01 .about .more a {
+  border-top: 2px solid #737373;
+  border-bottom: 2px solid #737373;
   color: #ffffff;
 }
-.shop .shop-content .card-larg {
+.prozent .shop-grid .shop-content .grid-01 .about .more a:hover {
+  border: 2px solid #737373;
+  border-top: 2px Solid #a57d38;
+  border-bottom: 2px Solid #a57d38;
+}
+
+.card-larg {
   background-color: #ffffff;
   border: 1px solid #737373;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  margin: 20px;
 }
-.shop .shop-content .card-larg .produkt-content-1 {
+.card-larg .produkt-content-1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px;
 }
-.shop .shop-content .card-larg .produkt-content-1 p {
+.card-larg .produkt-content-1 p {
   color: #737373;
   font-size: 20px;
 }
-.shop .shop-content .card-larg .produkt-content-1 h5, .shop .shop-content .card-larg .produkt-content-1 .h5 {
+.card-larg .produkt-content-1 h5, .card-larg .produkt-content-1 .h5 {
   color: #242d34;
   font-size: 25px;
   font-weight: bold;
 }
-.shop .shop-content .card-larg .produkt-content-1 .produkt-price {
-  color: #a57d38;
-  font-size: 25px;
-  font-weight: bold;
-}
-.shop .shop-content .card-larg .produkt-content-1 .buttons {
+.card-larg .produkt-content-1 .buttons {
   display: flex;
 }
-.shop .shop-content .card-larg .produkt-content-1 .buttons span button#absenden {
+.card-larg .produkt-content-1 .buttons span {
+  height: 50px;
+}
+.card-larg .produkt-content-1 .buttons span button#absenden {
+  height: 100%;
   border-radius: 0;
   background-color: #737373;
-  padding: 0.5rem 0.2rem;
+  padding: 0.5rem;
 }
-.shop .shop-content .card-larg .produkt-content-1 .buttons span button#absenden a img {
+.card-larg .produkt-content-1 .buttons span button#absenden a img {
   width: 25px;
 }
-.shop .shop-content .card-larg .produkt-content-1 .buttons button#absenden {
+.card-larg .produkt-content-1 .buttons button#absenden {
   border-radius: 0;
+  padding: 0 3px;
 }
-.shop .shop-content .card-larg .produkt-content-1 .buttons button#absenden a {
+.card-larg .produkt-content-1 .buttons button#absenden a {
   text-decoration: none;
   color: #ffffff;
 }
-.shop .shop-content .card-larg .produkt-img {
+.card-larg .produkt-img {
   padding: 0;
   margin: 0;
+}
+.card-larg .produkt-img img {
+  width: 80%;
 }
 
 .shop-1 {
@@ -1074,6 +1117,7 @@ form input:focus:valid {
 .shop-1 .shop-content-1 {
   width: 100%;
   padding: 20px;
+  height: 100%;
 }
 .shop-1 .shop-content-1 .card-larg-1 {
   background-color: #ffffff;
@@ -1083,6 +1127,7 @@ form input:focus:valid {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  height: 100%;
 }
 .shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 {
   display: flex;
@@ -1117,6 +1162,7 @@ form input:focus:valid {
 }
 .shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons button#absenden {
   border-radius: 0;
+  padding: 0 3px;
 }
 .shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .buttons button#absenden a {
   text-decoration: none;
@@ -1127,15 +1173,139 @@ form input:focus:valid {
   padding: 0;
   margin: 0;
 }
+.shop-1 .shop-content-1 .card-larg-1 .produkt-img-1 img {
+  width: 80%;
+}
+
+.shop-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, 1fr));
+}
+.shop-grid .shop-content {
+  grid-column: 1/5;
+}
+.shop-grid .card-larg {
+  grid-column: 1/5;
+}
+.shop-grid .shop-1 {
+  grid-column: 1/5;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.brands .brand-1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.brands .brand-2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.brands img {
+  width: 150px;
+}
+
+#produkt-price {
+  color: #a57d38;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#img-w {
+  width: 70px;
+}
+
+#mam-mar {
+  margin-top: 150px;
+}
+
 @media screen and (min-width: 640px) {
-  .shop .shop-content .card-larg {
-    flex-direction: row;
-  }
   .shop-1 .shop-content-1 {
-    width: 50%;
+    width: 100%;
   }
-  .shop-1 .shop-content-1 .card-larg-1 .produkt-img-1 img {
+  .shop-1 .shop-content-1 .card-larg-1 .produkt-content-2 .produkt-img-1 img {
     width: 80%;
+  }
+
+  .shop-grid .shop-0 {
+    grid-column: 1/3;
+  }
+  .shop-grid .shop-2 {
+    grid-column: 3/5;
+  }
+  .shop-grid .shop-3 {
+    grid-column: 1/3;
+  }
+  .shop-grid .shop-4 {
+    grid-column: 3/5;
+  }
+}
+@media screen and (min-width: 880px) {
+  .shop-grid .shop-content {
+    grid-column: 1/3;
+  }
+  .shop-grid .card-larg {
+    grid-column: 1/3;
+  }
+  .shop-grid .shop-0 {
+    grid-column: 3/5;
+    grid-row: 1;
+  }
+  .shop-grid .shop-2 {
+    grid-column: 3/5;
+  }
+  .shop-grid .shop-3 {
+    grid-column: 1/3;
+  }
+  .shop-grid .shop-4 {
+    grid-column: 3/5;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .shop-grid .shop-0 {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .shop-grid .shop-2 {
+    grid-column: 3/4;
+  }
+  .shop-grid .shop-3 {
+    grid-column: 4/5;
+    grid-row: 1;
+  }
+  .shop-grid .shop-4 {
+    grid-column: 4/5;
+  }
+
+  .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .brands .brand-1 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .brands .brand-2 {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .brands img {
+    width: 150px;
   }
 }
 /*!
