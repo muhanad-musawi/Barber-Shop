@@ -120,6 +120,14 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    height: 70px;
+    box-shadow: 0px 4px 5px 0 rgba(36, 45, 52, 0.397);
+    padding-right: 10px;
+  }
+
   .logo {
     float: left;
     width: auto;

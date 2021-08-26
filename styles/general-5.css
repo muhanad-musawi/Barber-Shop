@@ -58,35 +58,38 @@ form {
   font-size: 20px;
   font-weight: bold;
   margin: 20px 20px;
-  padding: 20px;
-  border: 1px solid #a57d38;
+  padding: 10px;
   background-color: #ffffff;
 }
 form input {
   width: 100%;
   color: #242d34;
   background-color: #ffffff;
-  border: #737373 1px solid;
   padding: 0.2em;
-  margin: 20px 0;
+  margin: 3px 0;
+  margin-bottom: 10px;
+  border: 2px solid #a57d38;
 }
 form textarea {
   width: 100%;
   height: 50px;
   background-color: #ffffff;
   color: #242d34;
+  border: 2px solid #a57d38;
 }
 form select#personen {
   background-color: #ffffff;
 }
 form select {
   width: 100%;
-  padding: 10px;
   color: #a57d38;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding: 0.3em;
+  margin: 3px 0;
+  margin-bottom: 10px;
+  padding: 0.2em;
+  padding-right: 0;
+  border: 2px solid #a57d38;
 }
 form input#absenden {
   margin-top: 20px;
@@ -108,7 +111,7 @@ form input#absenden:hover {
   background-image: linear-gradient(to bottom right, #a57d38, #242d34);
 }
 form input:hover:required {
-  background-color: #a57d38;
+  background-color: #a08d6cea;
 }
 form input:focus:invalid {
   background: #ffffff;
@@ -150,7 +153,7 @@ form input:focus:valid {
   }
 
   .zero {
-    margin: 20px 0px;
+    margin: 0px 0px;
   }
 
   .contact {
